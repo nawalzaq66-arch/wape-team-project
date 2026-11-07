@@ -1,13 +1,20 @@
 
-
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Header from './components/Header'
+import Home from './pages/Home'
+import Books from './pages/Books'
 import './App.css'
+
 function App() {
   return (
-    <div>
-      <h1>مِداد</h1>
-      <p>من الحبر تبدأ الحكايات</p>
-      <button>استكشف الكتب</button>
-    </div>
+    <BrowserRouter>
+      <Header />
+
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/books" element={<Books />} />
+      </Routes>
+    </BrowserRouter>
   )
 }
 

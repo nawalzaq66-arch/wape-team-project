@@ -1,3 +1,6 @@
+
+import { Link } from 'react-router-dom'
+
 function Header() {
   return (
     <header className="header">
@@ -7,17 +10,14 @@ function Header() {
       </div>
 
       <nav className="navbar">
-        <a href="/"> الرئيسية </a>
-        <a href="/books"> الكتب </a>
-        <a href="/about"> عن مِداد </a>
-        <a href="/login"> تسجيل الدخول </a>
-        <a href="/register">إنشاء حساب</a>
+        <Link to="/">الرئيسية</Link>
+        <Link to="/books">الكتب</Link>
+        <Link to="/about">عن مِداد</Link>
+        <Link to="/login">تسجيل الدخول</Link>
+        <Link to="/register">إنشاء حساب</Link>
       </nav>
     </header>
   )
 }
 
 export default Header
-
- /* أنشأنا Header.jsx : حتى نفصل الجزء المسؤول عن رأس الصفحة والتنقل. */
- /*بدل ما نكتب الهيدر داخل كل صفحة، بنكتبه مرة واحدة ونستدعيه وين ما احتجنا. */

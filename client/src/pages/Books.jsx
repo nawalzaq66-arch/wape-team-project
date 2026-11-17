@@ -1,6 +1,7 @@
 
 import { useState } from 'react'
 import booksData from '../data/book'
+import BookCard from '../components/BookCard'
 
 function Books() {
   const [books] = useState(booksData)
@@ -24,9 +25,15 @@ function Books() {
   return (
     <main className="books-page" dir="rtl">
       <section className="books-intro">
-        <span className="books-label">عالم من الحكايات والمعرفة</span>
+        <span className="books-label">
+          عالم من الحكايات والمعرفة
+        </span>
+
         <h1>مكتبة مِداد</h1>
-        <p>اكتشفي الكتب التي تناسب ذوقك وتفتح لك آفاقًا جديدة.</p>
+
+        <p>
+          اكتشفي الكتب التي تناسب ذوقك وتفتح لك آفاقًا جديدة.
+        </p>
       </section>
 
       <section className="books-toolbar">
@@ -56,31 +63,18 @@ function Books() {
       <section className="books-grid">
         {filteredBooks.length > 0 ? (
           filteredBooks.map((book) => (
-            <article className="book-card" key={book.id}>
-              <div className="book-icon">📖</div>
-
-              <h3>{book.title}</h3>
-
-              <p className="book-author">
-                <span>المؤلف</span>
-                {book.author}
-              </p>
-
-              <span className="book-category">
-                {book.category}
-              </span>
-
-              <div className="book-rating">
-                <span>⭐</span>
-                {book.rating}
-              </div>
-            </article>
+            <BookCard
+              key={book.id}
+              book={book}
+            />
           ))
         ) : (
           <div className="books-empty">
             <span>📚</span>
             <h3>لم نعثر على كتاب مطابق</h3>
-            <p>جربي البحث باستخدام اسم كتاب أو مؤلف آخر.</p>
+            <p>
+              جربي البحث باستخدام اسم كتاب أو مؤلف آخر.
+            </p>
           </div>
         )}
       </section>

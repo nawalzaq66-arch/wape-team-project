@@ -1,20 +1,27 @@
 # AI Use Declaration
 
-Complete this file when significant AI assistance was used. Add another entry for each significant use. Routine spelling correction, code completion, and brief syntax assistance do not need separate entries.
+## Entry 1 – React Development Support
 
-## Entry 1
-
-- **Tool used:**
-- **Purpose:**
+- **Tool used:** ChatGPT (OpenAI).
+- **Purpose:** To understand React concepts, receive code suggestions, and troubleshoot development errors during frontend implementation.
 - **Affected files or features:**
-- **How the result was reviewed, tested, or modified:**
+  - `client/src/App.jsx`
+  - `client/src/components/Header.jsx`
+  - `client/src/components/BookCard.jsx`
+  - `client/src/pages/Home.jsx`
+  - `client/src/pages/Books.jsx`
+  - Book catalog, search, sorting, and navigation features.
+- **How the result was reviewed, tested, or modified:** The suggested code was reviewed, adapted to the project, and tested locally in the browser. Errors were investigated and corrected during development.
 
-## Entry 2
+## Entry 2 – Documentation and Deployment Support
 
-- **Tool used:**
-- **Purpose:**
+- **Tool used:** ChatGPT (OpenAI).
+- **Purpose:** To assist with preparing project documentation, understanding Git and GitHub commands, and configuring the frontend deployment on Render.
 - **Affected files or features:**
-- **How the result was reviewed, tested, or modified:**
+  - `README.md`
+  - Project submission documentation.
+  - Render Static Site deployment configuration.
+- **How the result was reviewed, tested, or modified:** Documentation was adapted to the actual implemented features. Deployment was tested, and the frontend was successfully published on Render.
 
 ## Team Declaration
 

@@ -1,35 +1,93 @@
-# WAPE Student Support Materials
+# MIDAD – Book Discovery Platform
 
-Support repository for the **Web Applications Programming and Engineering Semester Project**.
+## Team Members
 
-This repository provides templates, checklists, and short guides. It does **not** provide a project solution. Your group remains responsible for designing, implementing, testing, deploying, and explaining its own application.
+- NAWAL HAMZA THAMER ALZAGAREET — 2144005
+- ABEER ALA'ALDIN MOHAMMAD MAABREH — 2338150
 
-## Recommended Use
+## Project Summary
 
-1. Import this repository into GitHub or copy the required files into your project repository.
-2. Read the relevant milestone checklist before starting.
-3. Keep `README.md`, `.env.example`, `AI-USE.md`, and `submission-links.txt` updated during development.
-4. Before each submission, complete the relevant checklist and verify the deployed application.
+MIDAD is a bilingual book discovery platform designed to help readers explore books, discover new titles, and find books that match their interests.
 
-## Repository Contents
+The application provides a simple and user-friendly interface for browsing a collection of books.
 
-- `client/`: the React application.
-- `server/`: the Express, Node.js, Mongoose, and authentication code.
-- `templates/README-template.md`: project README template.
-- `templates/submission-links-template.txt`: required submission information.
-- `templates/AI-USE-template.md`: concise declaration of significant AI assistance.
-- `templates/contribution-summary-template.md`: team contribution record.
-- `templates/env-example-template`: example environment-variable names without secrets.
-- `templates/gitignore-template`: recommended exclusions.
-- `checklists/milestone-1-checklist.md`: Milestone 1 self-check.
-- `checklists/milestone-2-checklist.md`: Milestone 2 self-check.
-- `checklists/submission-checklist.md`: final packaging and link checks.
-- `guides/recommended-structure.md`: suggested MERN repository structure.
-- `guides/git-workflow.md`: simple team Git workflow and commit guidance.
-- `guides/deployment-checklist.md`: Render and hosted MongoDB deployment checks.
-- `guides/common-issues.md`: common CORS, cookie, environment, API, and deployment issues.
-- `guides/ai-use-guidance.md`: practical guidance for permitted and declared AI use.
+## Main Features
 
-## Important
+- Home page introducing the MIDAD platform.
+- Books catalog displaying at least 10 mock book records.
+- Search books by title, author, or category.
+- Sort books alphabetically or by rating.
+- About page describing the platform.
+- Login and Registration placeholder pages.
+- Shared navigation between application pages.
+- Reusable BookCard component.
 
-The official project specification and Moodle instructions take priority if any difference exists between them and these support materials.
+## Technologies
+
+- React
+- JavaScript
+- Vite
+- React Router
+- CSS
+- Render Static Site
+
+## Project Structure
+
+The frontend application is located in the `client` directory.
+
+```text
+wape-team-project/
+├── client/
+│   ├── public/
+│   ├── src/
+│   │   ├── components/
+│   │   ├── data/
+│   │   ├── pages/
+│   │   ├── App.jsx
+│   │   └── App.css
+│   └── package.json
+├── server/
+└── README.md
+```
+
+## Local Setup
+
+### Client
+
+1. Clone the repository:
+
+   `git clone https://github.com/nawalzaq66-arch/wape-team-project.git`
+
+2. Open the project directory:
+
+   `cd wape-team-project/client`
+
+3. Install dependencies:
+
+   `npm install`
+
+4. Start the development server:
+
+   `npm run dev`
+
+5. Open the local URL displayed in the terminal.
+
+## Deployed URL
+
+React Application:
+
+https://midad-bdyg.onrender.com
+
+## GitHub Repository
+
+https://github.com/nawalzaq66-arch/wape-team-project
+
+## Contribution Summary
+
+Each team member contributes to the development and improvement of the MIDAD application.
+
+The team members are responsible for understanding and explaining the application's implementation.
+
+## AI Use
+
+See `AI-USE.md` for the declaration of AI-assisted development support.

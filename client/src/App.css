@@ -682,3 +682,183 @@ button:hover { /* بيتفاعل العنصر عند تمرير الماوس ع�
     grid-template-columns: 1fr;
   }
 }
+
+/* ===== Global Layout Fix ===== */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  width: 100%;
+  min-width: 320px;
+  min-height: 100%;
+  margin: 0;
+}
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  background-color: #f8f5ff;
+}
+
+#root {
+  max-width: none;
+  padding: 0;
+  text-align: center;
+}
+
+/* ===== Header Responsive Fix ===== */
+
+.header {
+  width: 100%;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.navbar {
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* ===== Home Page Fix ===== */
+
+.home-page {
+  width: 100%;
+  max-width: 100%;
+  padding: 55px 25px 80px;
+  overflow: hidden;
+}
+
+.home-hero {
+  width: 100%;
+  max-width: 850px;
+  padding: 0 15px;
+  margin: 25px auto 75px;
+}
+
+.home-hero h1 {
+  font-size: clamp(32px, 5vw, 58px);
+  overflow-wrap: break-word;
+}
+
+.home-hero p {
+  max-width: 100%;
+  font-size: clamp(16px, 2vw, 21px);
+  overflow-wrap: break-word;
+}
+
+.home-features {
+  width: 100%;
+  max-width: 1050px;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.feature-card {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* ===== Books Page Fix ===== */
+
+.books-page {
+  width: 100%;
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.books-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.book-card {
+  min-width: 0;
+  overflow-wrap: break-word;
+}
+
+/* ===== Tablet ===== */
+
+@media (max-width: 850px) {
+  .home-features {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .books-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+/* ===== Mobile ===== */
+
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding: 18px 12px;
+    gap: 15px;
+  }
+
+  .navbar {
+    width: 100%;
+    gap: 12px;
+    justify-content: center;
+  }
+
+  .navbar a {
+    font-size: 13px;
+  }
+
+  .home-page {
+    padding: 35px 16px 50px;
+  }
+
+  .home-hero {
+    margin: 20px auto 45px;
+    padding: 0 5px;
+  }
+
+  .home-hero h1 {
+    font-size: 36px;
+    line-height: 1.5;
+  }
+
+  .home-hero p {
+    font-size: 16px;
+    line-height: 1.8;
+  }
+
+  .home-features {
+    grid-template-columns: 1fr;
+    gap: 18px;
+  }
+
+  .feature-card {
+    width: 100%;
+    padding: 25px 18px;
+  }
+
+  .books-page {
+    padding: 35px 16px 50px;
+  }
+
+  .books-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .books-toolbar {
+    width: 100%;
+  }
+
+  .about-page {
+    padding: 35px 16px 50px;
+  }
+}

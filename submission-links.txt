@@ -1,14 +1,18 @@
 PROJECT TITLE:
+MIDAD – Book Discovery Platform
 
 TEAM MEMBERS:
-1. Name — Student ID
-2. Name — Student ID
-3. Name — Student ID
+1. NAWAL HAMZA THAMER ALZAGAREET — 2144005
+2. ABEER ALA'ALDIN MOHAMMAD MAABREH — 2338150
 
 PUBLIC GITHUB REPOSITORY URL:
+https://github.com/nawalzaq66-arch/wape-team-project
 
 SUBMITTED COMMIT HASH:
+TO BE UPDATED AFTER FINAL COMMIT
 
 DEPLOYED REACT URL:
+https://midad-bdyg.onrender.com
 
-DEPLOYED API BASE URL: [Milestone 2 only]
+DEPLOYED API BASE URL:
+Not applicable – Milestone 1 (Frontend only)
